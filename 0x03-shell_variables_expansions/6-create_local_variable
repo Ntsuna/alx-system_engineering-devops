@@ -1,0 +1,5 @@
+#!/bin/bash
+
+BEST="School"
+
+echo "Value of BEST: $BEST"

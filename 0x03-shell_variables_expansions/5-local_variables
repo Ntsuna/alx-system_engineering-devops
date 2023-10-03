@@ -1,0 +1,15 @@
+#!/bin/bash
+
+local_variables=$(set | grep -Eo '^[a-zA-Z_][a-zA-Z_0-9]*=')
+environment_variables=$(env | cut -d= -f1)
+functions=$(declare -F | cut -d' ' -f3)
+
+echo "Local Variables:"
+echo "$local_variables"
+
+echo "Environment Variables:"
+echo "$environment_variables"
+
+echo "Functions:"
+echo "$functions"
+c

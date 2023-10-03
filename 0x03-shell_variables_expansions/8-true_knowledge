@@ -1,0 +1,10 @@
+#!/bin/bash
+
+value="$TRUEKNOWLEDGE"
+
+if [[ -n "$value" && "$value" =~ ^[0-9]+$ ]]; then
+    result=$((128 + value))
+    echo "$result"
+else
+    echo "Environment variable TRUEKNOWLEDGE is not set or is not a valid number."
+fi

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+IFS=":" read -ra path_array <<< "$PATH"
+directory_count=${#path_array[@]}
+echo "Number of directories in the PATH: $directory_count"

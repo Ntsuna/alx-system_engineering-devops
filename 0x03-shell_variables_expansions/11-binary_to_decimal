@@ -1,0 +1,10 @@
+#!/bin/bash
+
+binary="$BINARY"
+
+if [[ -n "$binary" && "$binary" =~ ^[01]+$ ]]; then
+    decimal=$(echo "ibase=2; $binary" | bc)
+    echo "$decimal"
+else
+    echo "Environment variable BINARY is not set or does not contain a valid binary number."
+fi

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+breath="$BREATH"
+love="$LOVE"
+
+if [[ -n "$breath" && -n "$love" && "$breath" =~ ^[0-9]+$ && "$love" =~ ^[0-9]+$ ]]; then
+    result=$(echo "$breath ^ $love" | bc -l)
+    echo "$result"
+else
+    echo "Environment variables BREATH and LOVE are not both set or are not valid numbers."
+fi

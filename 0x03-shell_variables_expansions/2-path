@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ ":$PATH:" != *":/action:"* ]]; then
+    export PATH="$PATH:/action"
+    echo "Added /action to the PATH."
+else
+    echo "/action is already in the PATH."
+fi

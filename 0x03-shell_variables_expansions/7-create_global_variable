@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export BEST="School"
+
+echo "Value of BEST: $BEST"

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+power="$POWER"
+divide="$DIVIDE"
+
+if [[ -n "$power" && -n "$divide" && "$power" =~ ^[0-9]+$ && "$divide" =~ ^[0-9]+$ ]]; then
+    result=$(echo "scale=2; $power / $divide" | bc)
+    echo "$result"
+else
+    echo "Environment variables POWER and DIVIDE are not both set or are not valid numbers."
+fi
