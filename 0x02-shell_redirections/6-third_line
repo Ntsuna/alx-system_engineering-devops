@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ -f "iacta" ]; then
+    head -n 3 "iacta" | tail -n 1
+else
+    echo "File 'iacta' not found in the current directory."
+fi

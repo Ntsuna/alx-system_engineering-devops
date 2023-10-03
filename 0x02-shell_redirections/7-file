@@ -1,0 +1,5 @@
+#!/bin/bash
+
+text="Best School"
+
+echo -e "$text\n" > '*\\'"Best School"'\\*$?*****:)'

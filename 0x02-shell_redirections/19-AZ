@@ -1,0 +1,1 @@
+echo "YourInputString" | tr 'Ac' 'Ze'
